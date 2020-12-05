@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:plant_shop/screens/home_screen.dart';
+import 'package:plant_shop/screens/store_screen.dart';
 
 void main() {
   runApp(MyApp());
@@ -12,13 +13,14 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+        canvasColor: Color(0xffF2F5FC),
         textTheme: TextTheme(
           bodyText1: TextStyle(
             color: Color(0xff364864),
           ),
         ),
       ),
-      home: HomeScreen(),
+      home: StoreScreen(),
     );
   }
 }
