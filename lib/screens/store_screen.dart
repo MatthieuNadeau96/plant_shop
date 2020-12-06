@@ -25,19 +25,21 @@ class _StoreScreenState extends State<StoreScreen> {
       appBar: MyAppBar(
         title: 'Store',
       ),
-      body: Container(
-        child: ListView.builder(
-          itemCount: plants.length,
-          itemBuilder: (context, index) {
-            final PlantModel plant = plants[index];
-            return StoreItem(
-              name: plant.name,
-              image: plant.image,
-              description: plant.description,
-              rating: plant.rating,
-              price: plant.price,
-            );
-          },
+      body: SafeArea(
+        child: Container(
+          child: ListView.builder(
+            itemCount: plants.length,
+            itemBuilder: (context, index) {
+              final PlantModel plant = plants[index];
+              return StoreItem(
+                name: plant.name,
+                image: plant.image,
+                description: plant.description,
+                rating: plant.rating,
+                price: plant.price,
+              );
+            },
+          ),
         ),
       ),
     );

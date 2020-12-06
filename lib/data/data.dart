@@ -3,7 +3,7 @@ import 'package:plant_shop/model/plant_model.dart';
 List<PlantModel> getPlants() {
   List<PlantModel> plants = [
     PlantModel(
-      image: 'assets/images/banana-tree.jpg',
+      image: 'assets/images/banana-tree-2.jpg',
       name: 'Banana Tree',
       description: '',
       rating: 4.0,
@@ -24,18 +24,18 @@ List<PlantModel> getPlants() {
       price: 69.99,
     ),
     PlantModel(
-      image: 'assets/images/tiny-plant.jpg',
-      name: 'Tiny Guy',
-      description: '',
-      rating: 3.25,
-      price: 9.99,
-    ),
-    PlantModel(
       image: 'assets/images/pothos-type-plant.jpg',
       name: 'Pothos',
       description: '',
       rating: 4.00,
       price: 19.99,
+    ),
+    PlantModel(
+      image: 'assets/images/blurry-succulent.jpg',
+      name: 'Succulent',
+      description: '',
+      rating: 4.25,
+      price: 9.99,
     ),
   ];
   return plants;
